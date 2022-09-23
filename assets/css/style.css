@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ul{
+    list-style: none;
+}
+:root{
+   --mainColor: #ff206e;
+}
+.w-20{
+    width: 15%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../img/light_dot.jpg);
+    height: 4000px;
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+    font-size: .875rem;
+}
+.navbar-nav .nav-item a.active{
+    color: var(--mainColor);
+}
+.header{
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.h2-title{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.header .view{
+    color: var(--mainColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.header-icons{
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    right: .55rem;
+}
+.header-icons a{
+    color: #fff;
+}
+
+.text-effect{
+    opacity: 0;
+    animation-name: text-opacity;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.text-effect:after{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    animation: block 1.5s;
+}
+@keyframes text-opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes block {
+    0%{
+        left: 0%;
+        width: 0%;
+    }
+    75%{
+        left: 0%;
+        width: 100%;
+    }
+    100%{
+           left: 100%;
+           width: 0%;
+    }
+}
+
+.navbar-toggler span{
+   color: #fff;
+    display: flex;
+    border-radius: 2px solid #fff;
+    height: 3px;
+    background-color: #fff;
+    margin: .25rem auto;
+}
+
+.navbar-toggler span:nth-child(1){
+    width: 25px;
+}
+.navbar-toggler span:nth-child(2){
+    width: 25px;
+}
+.navbar-toggler span:nth-child(3){
+    width: 10px;
+    text-align: center;
+}
+
+
+@media (max-width:992px) {
+    .navbar{
+        background-color: #000;
+    }
+    
+}
+
+/*about*/
+.about{
+    padding-top: 6rem;
+}
+.title h2{
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #cacaca;
+}
+.title h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #000;
+}
+.about h4{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.about h5{
+    color: var(--mainColor);
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+/*for email*/
+.about .about-content:last-child a{
+    color:#000 ;
+    font-weight: 800;
+}
+
+.services{
+    margin-top: 5rem;
+    background-image: url(../img/dark_dot.jpg);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.services .title h2{
+    color: #222;
+}
+.services .title h3{
+    color: #fff;
+}
+.services .title-text p{
+    color: #aaa;
+}
+.service-box{
+    position:relative;
+    margin-bottom: 20px;
+}
+.service-box i{
+    color: #fff;
+    background-color: #000;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%); 
+}
+
+/*portfolio*/
+.portfolio{
+    padding-top: 6rem;
+}
+.nav-tabs{
+    border: 0;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: var(--mainColor);
+    border: 0;
+    background-color: transparent;
+}
+.nav-tabs .nav-link{
+    color: #000;
+    background-color: transparent;
+    border: 0;
+}
+/*testimonials*/
+.testimonials{
+    padding-top: 6rem;
+}
+.testimonials img{
+    width: 90px;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--mainColor);
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+.carousel-indicators{
+    bottom: -59px;
+}
