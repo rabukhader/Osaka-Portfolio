@@ -217,3 +217,32 @@ body{
 .carousel-indicators{
     bottom: -59px;
 }
+
+
+
+
+.color-box{
+    position: fixed;
+    top: 300px;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+}
+.color-option{
+    background-color: green;
+    padding: 10px;
+    border: 1px solid orange;
+}
+.color-option li{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: blue;
+}
+.color-box i{
+    background-color: gray;
+    padding: 10px;
+    height: fit-content;
+    border: 3px solid orange;
+
+}
